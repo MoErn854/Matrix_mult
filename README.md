@@ -25,23 +25,25 @@ matrix_mult_naive(A, B, n):
 <br>
 Explanation:
 <br>
+
 ![image](https://user-images.githubusercontent.com/84231705/148701172-30ff5dea-d54e-4d5d-a977-f9d4e49764b8.png)
+
 <br>
 Pseudo-code:
 <br>
+
 ![image](https://user-images.githubusercontent.com/84231705/148701192-4a76ba3b-7a82-485d-9a56-275236837d3d.png)
+
 <br>
 time complixity :
 <br>
+
 ![image](https://user-images.githubusercontent.com/84231705/148701211-5921902f-e0cf-4f52-acd2-7083f47f180d.png)
 
 
-⸪ 𝑛/2𝑖 = 1 
-⸫ 2^𝑖 = 𝑛
-⸫ 𝑖 = log2 𝑛
+⸪ 𝑛/2𝑖 = 1    ⸫ 2^𝑖 = 𝑛    ⸫ 𝑖 = log2 𝑛
 <br>
-Total Cost = Σ 𝑘 ∗ 8𝑖 ∗ (𝑛/2𝑖) = 𝑘 𝑛 Σ 4^𝑖 = 𝑘𝑛 + 4 𝑘𝑛 + ⋯+ 𝒌𝒏^𝟑 <br>
-**O(n3)**
+Total Cost = Σ 𝑘 ∗ 8𝑖 ∗ (𝑛/2𝑖) = 𝑘 𝑛 Σ 4^𝑖 = 𝑘𝑛 + 4 𝑘𝑛 + ⋯+ 𝒌𝒏^𝟑 = **O(n3)**
 
 <hr>
 
@@ -81,15 +83,13 @@ matrix_mult_fast (A,B, sizeN) :
 ```
 
 time complixity : 
+<br>
 ![image](https://user-images.githubusercontent.com/84231705/148701404-2fdd7668-6d24-4c6d-91dc-a62dfc700e1d.png)
 
 
-⸪ 𝑛/2𝑖 = 1 
-⸫ 2^𝑖 = 𝑛
-⸫ 𝑖 = log2 𝑛
+⸪ 𝑛/2𝑖 = 1    ⸫ 2^𝑖 = 𝑛     ⸫ 𝑖 = log2 𝑛
 
-Total Cost = Σ 𝑘 ∗ 7𝑖 ∗ (𝑛/2𝑖) = 𝑘 * 𝑛 Σ (7^𝑖/2^i) = 𝑘𝑛 + ... + 𝒌𝒏^log2(7) <br>
-**O(n^2.81)**
+Total Cost = Σ 𝑘 ∗ 7𝑖 ∗ (𝑛/2𝑖) = 𝑘 * 𝑛 Σ (7^𝑖/2^i) = 𝑘𝑛 + ... + 𝒌𝒏^log2(7) = **O(n^2.81)**
 
 <hr>
 
