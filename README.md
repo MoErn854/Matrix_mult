@@ -1,4 +1,5 @@
-# Matrix_mult
+# Matrix Multiplication Algorithm
+
 Small Application for matrix multiplication using different algorithms.
 
 ### Explanation 
